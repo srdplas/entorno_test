@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\srdpl\Desktop\CursoDAW\RepositorioCodigo\.metadata\.plugins\org.eclipse.jdt.core
+2731576660.index
+3896931233.index
+1865797976.index
+2960429687.index
+473988816.index
+1382867903.index

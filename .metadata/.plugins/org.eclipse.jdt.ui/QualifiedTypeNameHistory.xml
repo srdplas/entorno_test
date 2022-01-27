@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
+    <fullyQualifiedTypeName name="entorno.srdplas.Tarea1.PersonaTest"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="junit.framework.AssertionFailedError"/>
+    <fullyQualifiedTypeName name="org.opentest4j.AssertionFailedError"/>
+    <fullyQualifiedTypeName name="java.lang.AssertionError"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicPanelUI"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="entorno.yuri.tarea2.Serie"/>
+    <fullyQualifiedTypeName name="entorno.yuri.tarea2.Videojuego"/>
+    <fullyQualifiedTypeName name="ShoppingCart"/>
+    <fullyQualifiedTypeName name="Product"/>
+    <fullyQualifiedTypeName name="entorno.yuri.tarea2.ShoppingCart"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="entorno.yuri.tarea3.ShoppingCart"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="entorno.yuri.tarea3.Product"/>
+    <fullyQualifiedTypeName name="javax.security.auth.login.FailedLoginException"/>
+    <fullyQualifiedTypeName name="entorno.srdplas.Tarea1.Persona"/>
+</qualifiedTypeNameHistroy>

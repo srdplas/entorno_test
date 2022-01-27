@@ -1,0 +1,66 @@
+package entorno.srdplas.Tarea1;
+import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+import javax.swing.plaf.basic.BasicPanelUI;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.*;
+import org.hamcrest.CoreMatchers;
+import org.junit.*;
+class PersonaTest extends CoreMatchers{
+	
+	private static Persona p;
+	
+	@BeforeAll
+	static void init() {
+		p= new Persona();
+	}
+	
+	@AfterAll 
+	static void finish(){
+		p = null;
+	}
+	
+	
+	@Test
+	void testCalcularIMC() {
+		
+		p.setAltura(1.85);
+		p.setEdad(19);
+		p.setNombre("Manolo");
+		p.setPeso(20.67);
+		
+		
+		assertEquals(1, p.calcularIMC(), "Error el metodo no funciona el peso no supera el minimo de los if");
+		
+	}
+
+	@Test
+	void testEsMayorDeEdad() {
+		Persona p = new Persona();
+		p.setEdad(17);
+	
+		assertIs();
+		
+	}
+
+	@Test
+	void testToString() {
+		Persona p = new Persona();
+		p.setAltura(175);
+		p.setEdad(19);
+		p.setNombre("Manolo");
+		p.setPeso(95.67);
+		
+		//Si el contenido del objeto p es nulo no pasará el test
+		assertNotEquals(null, p, "Error resultado no esperado");
+		
+		
+	}
+
+}

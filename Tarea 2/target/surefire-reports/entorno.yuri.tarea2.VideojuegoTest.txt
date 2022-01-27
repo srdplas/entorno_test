@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: entorno.yuri.tarea2.VideojuegoTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in entorno.yuri.tarea2.VideojuegoTest
