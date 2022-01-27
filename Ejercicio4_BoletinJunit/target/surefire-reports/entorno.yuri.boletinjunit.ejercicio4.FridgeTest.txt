@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: entorno.yuri.boletinjunit.ejercicio4.FridgeTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in entorno.yuri.boletinjunit.ejercicio4.FridgeTest
+testTake{String}  Time elapsed: 0.004 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [java.lang.String arg0] in method [void entorno.yuri.boletinjunit.ejercicio4.FridgeTest.testTake(java.lang.String) throws entorno.yuri.boletinjunit.ejercicio4.NoSuchItemException].
+

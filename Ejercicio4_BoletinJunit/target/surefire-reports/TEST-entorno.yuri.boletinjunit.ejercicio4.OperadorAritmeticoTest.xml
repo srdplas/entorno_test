@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\srdplas\AppData\Local\Temp\surefire11916041765432891274\surefirebooter16737723731134876400.jar C:\Users\srdplas\AppData\Local\Temp\surefire11916041765432891274 2022-01-27T23-00-30_541-jvmRun1 surefire1979746089460684883tmp surefire_09067533429448863416tmp"/>
+    <property name="sun.java.command" value="C:\Users\srdplas\AppData\Local\Temp\surefire4639190558296481858\surefirebooter12821149839879669829.jar C:\Users\srdplas\AppData\Local\Temp\surefire4639190558296481858 2022-01-27T23-47-49_053-jvmRun1 surefire14520273237745587413tmp surefire_014589052619487668651tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\srdplas\Desktop\DAW\ArchviosEclipse\entorno_test\Ejercicio4_BoletinJunit\target\test-classes;C:\Users\srdplas\Desktop\DAW\ArchviosEclipse\entorno_test\Ejercicio4_BoletinJunit\target\classes;C:\Users\srdplas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\srdplas\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\srdplas\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\srdplas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\srdplas\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\srdplas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\srdplas\.m2\repository\org\hamcrest\hamcrest-junit\2.0.0.0\hamcrest-junit-2.0.0.0.jar;C:\Users\srdplas\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\srdplas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\srdplas\.m2\repository\org\hamcrest\java-hamcrest\2.0.0.0\java-hamcrest-2.0.0.0.jar;C:\Users\srdplas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\srdplas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\srdplas\AppData\Local\Temp\surefire11916041765432891274\surefirebooter16737723731134876400.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\srdplas\AppData\Local\Temp\surefire4639190558296481858\surefirebooter12821149839879669829.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
