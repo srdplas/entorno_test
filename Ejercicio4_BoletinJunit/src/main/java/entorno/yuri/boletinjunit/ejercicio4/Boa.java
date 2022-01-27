@@ -10,13 +10,17 @@ public class Boa {
 		this.length = length;
 		this.favoriteFood = favoriteFood;
 	}
+	
 	// returns true if this boa constrictor is healthy
 	public boolean isHealthy(){
 		return this.favoriteFood.equals("granola bars");
 	}
+	
 	// returns true if the length of this boa constrictor is
 	// less than the given cage length
 	public boolean fitsInCage(int cageLength){
 		return this.length < cageLength;
 	}
+	
+	
 }
