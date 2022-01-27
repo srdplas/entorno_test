@@ -3,7 +3,9 @@ package entorno.yuri.boletinjunit.ejercicio4;
 import java.util.Stack;
 
 public class Pila {
+	
 	private Stack<Integer> pila = new Stack<Integer>();
+	
 	// Añade el número solo si es mayor que 2 y menor que 20
 	public void push (Integer num) {
 		if (num > 2 && num < 20)
