@@ -70,12 +70,13 @@ class FridgeTest extends CoreMatchers {
 		assertThat("Error el metodo contains() no funciona", f.contains(contenido), equalTo(colocar));
 	}
 
-	@Test
+	@ParameterizedTest
+	@MethodSource("contenidoFrigo")
 	void testTake(String contenido) throws NoSuchItemException {
 		
 		f.take(contenido);
 
-		assertThat("Error el metodo contains() no funciona", f.contains(contenido), nullValue());
+		assertThat("Error el metodo contains() no funciona", f.contains(contenido), is(false));
 	}
 
 }
