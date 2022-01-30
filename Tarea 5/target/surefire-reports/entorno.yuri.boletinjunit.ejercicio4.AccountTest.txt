@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: entorno.yuri.boletinjunit.ejercicio4.AccountTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 0.096 s <<< FAILURE! - in entorno.yuri.boletinjunit.ejercicio4.AccountTest
+testAddInterest  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testAddInterest(AccountTest.java:90)
+
+testToString  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testToString(AccountTest.java:140)
+
+testWithdraw{String, long, float, float, float, float, boolean}[2]  Time elapsed: 0.001 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 5: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+
+testWithdraw{String, long, float, float, float, float, boolean}[3]  Time elapsed: 0.001 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 5: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+
+testGetBalance{String, long, float}[1]  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+Error el metodo getBalance no funciona
+Expected: is <-1.0F>
+     but: was <500.0F>
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testGetBalance(AccountTest.java:114)
+
+testGetBalance{String, long, float}[2]  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+Error el metodo getBalance no funciona
+Expected: is <-1.0F>
+     but: was <700.0F>
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testGetBalance(AccountTest.java:114)
+
+testGetBalance{String, long, float}[3]  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+Error el metodo getBalance no funciona
+Expected: is <-1.0F>
+     but: was <1200.0F>
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testGetBalance(AccountTest.java:114)
+
