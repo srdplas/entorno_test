@@ -23,7 +23,7 @@ import org.junit.runners.Parameterized.Parameters;
 import org.hamcrest.*;
 import static org.hamcrest.Matchers.*;
 
-class BoaTest {
+class BoaTest extends CoreMatchers{
 
 	private Boa boa;
 	private boolean sano;

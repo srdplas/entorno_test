@@ -53,7 +53,7 @@ public static void main(String[] args)
     float prueba =1-0.05f;
     for (count = 1; count <= 1000; count = count + 1)
     {
-    	prueba = prueba + .10f;
+    	prueba = prueba + 0.05f;
     }
     System.out.println(fmt.format(prueba));
 }
