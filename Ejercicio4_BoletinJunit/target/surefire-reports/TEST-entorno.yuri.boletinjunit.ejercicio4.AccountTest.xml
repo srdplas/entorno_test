@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="entorno.yuri.boletinjunit.ejercicio4.SubscripcionTest" time="0.001" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.096" tests="17" errors="2" skipped="0" failures="5">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,7 +56,58 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testPrecioPorMes" classname="entorno.yuri.boletinjunit.ejercicio4.SubscripcionTest" time="0"/>
-  <testcase name="testCancel" classname="entorno.yuri.boletinjunit.ejercicio4.SubscripcionTest" time="0.001"/>
-  <testcase name="testSubscripcion" classname="entorno.yuri.boletinjunit.ejercicio4.SubscripcionTest" time="0"/>
+  <testcase name="testAccount{String, long, float}[1]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.035"/>
+  <testcase name="testAccount{String, long, float}[2]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001"/>
+  <testcase name="testAccount{String, long, float}[3]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0"/>
+  <testcase name="testAddInterest" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.008">
+    <failure message="Not yet implemented" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Not yet implemented
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testAddInterest(AccountTest.java:90)
+</failure>
+  </testcase>
+  <testcase name="testToString" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0">
+    <failure message="Not yet implemented" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Not yet implemented
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testToString(AccountTest.java:140)
+</failure>
+  </testcase>
+  <testcase name="testWithdraw{String, long, float, float, float, float, boolean}[1]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001"/>
+  <testcase name="testWithdraw{String, long, float, float, float, float, boolean}[2]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001">
+    <error message="Error converting parameter at index 5: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 5: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+</error>
+  </testcase>
+  <testcase name="testWithdraw{String, long, float, float, float, float, boolean}[3]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001">
+    <error message="Error converting parameter at index 5: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 5: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: No implicit conversion to convert object of type java.lang.Boolean to type java.lang.Float
+</error>
+  </testcase>
+  <testcase name="testGetBalance{String, long, float}[1]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.002">
+    <failure message="Error el metodo getBalance no funciona&#10;Expected: is &lt;-1.0F&gt;&#10;     but: was &lt;500.0F&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Error el metodo getBalance no funciona
+Expected: is <-1.0F>
+     but: was <500.0F>
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testGetBalance(AccountTest.java:114)
+]]></failure>
+  </testcase>
+  <testcase name="testGetBalance{String, long, float}[2]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001">
+    <failure message="Error el metodo getBalance no funciona&#10;Expected: is &lt;-1.0F&gt;&#10;     but: was &lt;700.0F&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Error el metodo getBalance no funciona
+Expected: is <-1.0F>
+     but: was <700.0F>
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testGetBalance(AccountTest.java:114)
+]]></failure>
+  </testcase>
+  <testcase name="testGetBalance{String, long, float}[3]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001">
+    <failure message="Error el metodo getBalance no funciona&#10;Expected: is &lt;-1.0F&gt;&#10;     but: was &lt;1200.0F&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Error el metodo getBalance no funciona
+Expected: is <-1.0F>
+     but: was <1200.0F>
+	at entorno.yuri.boletinjunit.ejercicio4.AccountTest.testGetBalance(AccountTest.java:114)
+]]></failure>
+  </testcase>
+  <testcase name="testGetAccountNumber{String, long, float}[1]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001"/>
+  <testcase name="testGetAccountNumber{String, long, float}[2]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001"/>
+  <testcase name="testGetAccountNumber{String, long, float}[3]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0"/>
+  <testcase name="testDeposit{String, long, float, float}[1]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0.001"/>
+  <testcase name="testDeposit{String, long, float, float}[2]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0"/>
+  <testcase name="testDeposit{String, long, float, float}[3]" classname="entorno.yuri.boletinjunit.ejercicio4.AccountTest" time="0"/>
 </testsuite>

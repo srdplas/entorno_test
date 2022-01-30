@@ -1,13 +1,12 @@
 package entorno.yuri.boletinjunit.ejercicio4;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import static org.hamcrest.Matchers.*;
 class OperadorAritmeticoTest extends CoreMatchers{
 	
 	private static OperadorAritmetico op;

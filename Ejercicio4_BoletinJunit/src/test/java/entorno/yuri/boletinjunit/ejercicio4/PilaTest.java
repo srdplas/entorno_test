@@ -1,7 +1,7 @@
 package entorno.yuri.boletinjunit.ejercicio4;
 
 
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.After;

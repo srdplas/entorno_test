@@ -63,8 +63,7 @@ public class Account
     public boolean withdraw(float amount, float fee)
     {
         // validate parameters
-        if (isValidWithdrawl(amount, fee))
-        {
+        if (isValidWithdrawl(amount, fee)) {
             amount += fee;
             balance = balance - amount;
         }
@@ -74,7 +73,7 @@ public class Account
     /* Determine if withdrawal parameters are valid */
     private boolean isValidWithdrawl(float amount, float fee)
     {
-        return amount >= 0 && fee >= 0 && amount <= balance;
+        return (amount >= 0 && fee >= 0 && amount <= balance);
     }
 
     /**

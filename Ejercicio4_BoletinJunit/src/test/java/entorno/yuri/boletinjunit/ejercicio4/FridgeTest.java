@@ -1,8 +1,8 @@
 package entorno.yuri.boletinjunit.ejercicio4;
 
-import static org.junit.Assert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
+import static org.junit.jupiter.api.Assertions.*;
+import static org.hamcrest.MatcherAssert.*;
 import java.util.stream.Stream;
 
 import org.hamcrest.CoreMatchers;
