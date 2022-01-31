@@ -7,8 +7,9 @@ import org.hamcrest.CoreMatchers;
 import org.hamcrest.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+@DisplayName("Test a la clase Subcripcion")
 class SubscripcionTest extends CoreMatchers{
 	
 	private static Subscripcion su;
@@ -25,11 +26,13 @@ class SubscripcionTest extends CoreMatchers{
 	}
 
 	@Test
+	@DisplayName("Test del constructor")
 	void testSubscripcion() {
 		assertThat("Error el constructor no funciona", su, notNullValue());
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar el precio al mes")
 	void testPrecioPorMes() {
 		double precio=-1;
 		precio=Math.round(su.precioPorMes());
@@ -40,6 +43,7 @@ class SubscripcionTest extends CoreMatchers{
 	}
 
 	@Test
+	@DisplayName("Test al metodo para cancelar la subcripcion")
 	void testCancel() {
 		su.cancel();
 		double esperado=0;
