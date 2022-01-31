@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -22,7 +23,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.hamcrest.*;
 import static org.hamcrest.Matchers.*;
-
+@DisplayName("Test Parametrizado a la clase Boa")
 class BoaTest extends CoreMatchers{
 
 	private Boa boa;
@@ -42,7 +43,7 @@ class BoaTest extends CoreMatchers{
 	
 	@ParameterizedTest
 	@MethodSource("datos")
-
+	@DisplayName("Test al constructor")
 	void testBoa(String nombre, int tamanio, String comida) {
 		
 		boa= new Boa(nombre, tamanio, comida);
@@ -52,6 +53,7 @@ class BoaTest extends CoreMatchers{
 
 	@ParameterizedTest
 	@MethodSource("datos")
+	@DisplayName("Test al metodo para obtener si está sano")
 	void testIsHealthy(String nombre, int tamanio, String comida, boolean sano) {
 		
 		boa= new Boa(nombre, tamanio, comida);
@@ -62,6 +64,7 @@ class BoaTest extends CoreMatchers{
 
 	@ParameterizedTest
 	@MethodSource("datos")
+	@DisplayName("Test al metodo para saber si cabe en la cueva")
 	void testFitsInCage(String nombre, int tamanio, String comida, boolean sano, int cueva) {
 		
 		boa= new Boa(nombre, tamanio, comida);

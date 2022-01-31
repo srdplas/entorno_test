@@ -4,8 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+@DisplayName("Test a la clase ShoppingCar")
 class ShoppingCartTest {
 	
 	private static ShoppingCart sh;
@@ -26,13 +27,15 @@ class ShoppingCartTest {
 	}
 	
 	@Test
+	@DisplayName("Test al constructor por defecto")
 	void testShoppingCart(){
-	// 1. El carrito est� vacio cuando se crea
+	// 1. El carrito esta vacio cuando se crea
 		
 		assertEquals(0, sh.getItemCount(), "Error en el resultado esperado");
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener el balance del carrito")
 	void testGetBalance(){
 		//4. Balance del carrito devuelve la suma de los precios de los items que haya en el carro
 		
@@ -43,6 +46,7 @@ class ShoppingCartTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para añadir items al carrito")
 	void testAddItem(){
 		//3. Se incrementa la cuenta de items al añadir un item al carrito
 		
@@ -51,6 +55,7 @@ class ShoppingCartTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para retirar items al carrito")
 	void testRemoveItem(){
 		
 		//5. Al quitar un item del carrito la cuenta de items debe decrementarse
@@ -71,6 +76,7 @@ class ShoppingCartTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para ver la cuenta items al carrito")
 	void testGetItemCount(){
 		
 		assertEquals(0, sh.getItemCount());

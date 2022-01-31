@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.*;
 import org.junit.jupiter.api.*;
-
+@DisplayName("Test a la clase Serie")
 public class SerieTest {
 
     private static Serie serie, serie2;
@@ -26,6 +26,7 @@ public class SerieTest {
         }
     
 	@Test
+	@DisplayName("Test al metodo para obtener el titulo")
 	public void testGetTitulo() {
 		
 		serie.setTitulo("Daredevil");
@@ -33,6 +34,7 @@ public class SerieTest {
 	}
 	
 	@Test
+	@DisplayName("Test al metodo para indicar el titulo")
 	public void testSetTitulo() {
 		
 		serie.setTitulo("Spider-Man");
@@ -40,6 +42,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener el numero de temporadas")
 	public void testGetnumeroTemporadas() {
 		
 		serie.setnumeroTemporadas(4);
@@ -47,6 +50,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar el numero de temporadas")
 	public void testSetnumeroTemporadas() {
 		
 		serie.setnumeroTemporadas(12);
@@ -54,6 +58,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener el genero")
 	public void testGetGenero() {
 		
 		serie.setGenero("Marvel");
@@ -61,6 +66,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar el genero")
 	public void testSetGenero() {
 		
 		serie.setGenero("Fantasia");
@@ -68,6 +74,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener el creador")
 	public void testGetcreador() {
 		Serie serie = new Serie();
 		serie.setcreador("Stan Lee");
@@ -75,6 +82,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar el genero")
 	public void testSetcreador() {
 		
 		serie.setcreador("Stan Lee");
@@ -82,6 +90,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para entregar la serie")
 	public void testEntregar() {
 		
 		serie.devolver();
@@ -90,6 +99,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para devolver la serie")
 	public void testDevolver() {
 		
 		serie.entregar();
@@ -98,6 +108,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener si esta entregado")
 	public void testIsEntregado() {
 		
 		serie.entregar();
@@ -108,6 +119,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comparar una serie con otra")
 	public void testCompareTo() {
 		
 		serie.setnumeroTemporadas(2);
@@ -119,6 +131,7 @@ public class SerieTest {
 
 
 	@Test
+	@DisplayName("Test al metodo para saber si es igual a otra serie")
 	public void testEqualsSerie() {
 		
 		serie.setTitulo("Daredevil");
@@ -133,6 +146,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comprobar el constructor")
 	public void testSerie() {
 		
 		serie = new Serie();
@@ -140,6 +154,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comprobar el constructor con 2 parametros")
 	public void testSerieStringString() {
 		serie = new Serie("Iron Man", "Marvel");
 		/*boolean funciona=false;
@@ -152,6 +167,7 @@ public class SerieTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comprobar el constructor con varios parametros")
 	public void testSerieStringIntStringString() {
 		serie = new Serie("Thor", 2, "accion", "Marvel");
 		/*boolean funciona=false;

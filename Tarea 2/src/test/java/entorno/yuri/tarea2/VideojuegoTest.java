@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.*;
 import org.junit.jupiter.api.*;
 
-
+@DisplayName("Test realizado a la clase Videojuego")
 public class VideojuegoTest {
 
     private static Videojuego video, video2;
@@ -25,6 +25,7 @@ public class VideojuegoTest {
     }
     
 	@Test
+	@DisplayName("Test al metodo para obtener el titulo")
 	public void testGetTitulo() {
 		
 		video.setTitulo("The Witcher 3");
@@ -32,6 +33,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar el titulo")
 	public void testSetTitulo() {
 		
 		video.setTitulo("The Witcher 3");
@@ -39,6 +41,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener las horas estimadas")
 	public void testGetHorasEstimadas() {
 		
 		video.setHorasEstimadas(60);
@@ -46,6 +49,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar las horas estimadas")
 	public void testSetHorasEstimadas() {
 		
 		video.setHorasEstimadas(60);
@@ -53,6 +57,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener el genero")
 	public void testGetGenero() {
 		
 		video.setGenero("Accion");
@@ -60,6 +65,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar el genero")
 	public void testSetGenero() {
 		
 		video.setGenero("Accion");
@@ -67,6 +73,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para obtener la compañia")
 	public void testGetcompañia() {
 		
 		video.setcompañia("CD Proyect");
@@ -74,12 +81,13 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para indicar la compañia")
 	public void testSetcompañia() {
 		
 		video.setcompañia("CD Proyect");
 		assertEquals("CD Proyect", video.getcompañia(), "Error Metodo no funciona");
 	}
-
+	@DisplayName("Test al metodo para entregar el videojuego")
 	@Test
 	public void testEntregar() {
 		
@@ -88,6 +96,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para devolver el videojuego")
 	public void testDevolver() {
 		
 		video.entregar();
@@ -96,6 +105,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comprobar si lo ha entregado o no")
 	public void testIsEntregado() {
 		
 		video.entregar();
@@ -106,6 +116,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comparar un videojuego con otro")
 	public void testCompareTo() {
 		
 		
@@ -116,6 +127,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al metodo para comprobar si es igual que otro dispositivo")
 	public void testEqualsVideojuego() {
 		
 		video.setTitulo("DOTA");
@@ -130,12 +142,14 @@ public class VideojuegoTest {
         
         
 	@Test
+	@DisplayName("Test al constructor")
 	public void testVideojuego() {
 		video = new Videojuego();
 		assertEquals(100,video.getHorasEstimadas(), "Error metodo no funciona");
 	}
        
 	@Test
+	@DisplayName("Test al constructor con 2 parametros")
 	public void testVideojuegoStringString() {
 		video = new Videojuego("GTA V", "RockStar");
                 assertEquals("GTA V", video.getTitulo(), "Error metodo no funciona");
@@ -144,6 +158,7 @@ public class VideojuegoTest {
 	}
 
 	@Test
+	@DisplayName("Test al constructor con varios parametros")
 	public void testVideojuegoStringIntStringString() {
 		video = new Videojuego("Borderlands 2", 200, "Accion", "RealiseDex");
                 assertEquals("Borderlands 2", video.getTitulo(), "Error metodo no funciona");

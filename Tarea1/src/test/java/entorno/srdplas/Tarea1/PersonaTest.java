@@ -1,6 +1,6 @@
 package entorno.srdplas.Tarea1;
 
-import static org.junit.Assert.assertThat;
+
 import static org.junit.jupiter.api.Assertions.*;
 import javax.swing.plaf.basic.BasicPanelUI;
 
@@ -14,6 +14,8 @@ import org.junit.jupiter.*;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.*;
 import org.junit.*;
+
+@DisplayName("Test a la clase Persona")
 class PersonaTest extends CoreMatchers{
 	
 	private static Persona p;
@@ -30,6 +32,7 @@ class PersonaTest extends CoreMatchers{
 	
 	
 	@Test
+	@DisplayName("Metodo para Calcular el IMC de una persona 😇")
 	void testCalcularIMC() {
 		
 		p.setAltura(1.85);
@@ -43,6 +46,7 @@ class PersonaTest extends CoreMatchers{
 	}
 
 	@Test
+	@DisplayName("Metodo para saber si es mayor de edad de una persona 😇")
 	void testEsMayorDeEdad() {
 		
 		p.setEdad(17);

@@ -11,6 +11,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.Matchers.*;
 class PilaTest extends CoreMatchers{
@@ -18,6 +19,7 @@ class PilaTest extends CoreMatchers{
 
 	
 	@Test
+	@DisplayName("Test al metodo para poner items en la pila")
 	void testPush() {
 		Pila p = new Pila();
 		p.push(21);
@@ -26,6 +28,7 @@ class PilaTest extends CoreMatchers{
 
 
 	@Test
+	@DisplayName("Test al metodo para quitar de la pila")
 	void testPop() {
 		Pila p = new Pila();
 		p.push(10);
@@ -34,6 +37,7 @@ class PilaTest extends CoreMatchers{
 	}
 
 	@Test
+	@DisplayName("Test al metodo para vaciar de la pila")
 	void testIsEmpty() {
 		Pila p = new Pila();
 		p.push(50);
@@ -41,6 +45,7 @@ class PilaTest extends CoreMatchers{
 	}
 
 	@Test
+	@DisplayName("Test al metodo para ver la cima de la pila")
 	void testTop() {
 		Pila p = new Pila();
 
