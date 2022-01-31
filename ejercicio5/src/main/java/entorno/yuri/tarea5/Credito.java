@@ -1,18 +1,18 @@
-package entorno.yuri.boletinjunit.ejercicicio5;
+package entorno.yuri.tarea5;
 
 import java.util.Vector;
 import java.util.Date;
 
-public class Credito extends Tarjeta{
-
+public class Credito extends Tarjeta
+{
 	protected double mCredito;
-	protected Vector mMovimientos;
+	protected Vector<Movimiento> mMovimientos;
 
 	public Credito(String numero, String titular, Date fechaCaducidad, double credito)
 	{
 		super(numero, titular, fechaCaducidad);
 		mCredito=credito;
-		mMovimientos=new Vector();
+		mMovimientos=new Vector<Movimiento>();
 	}
 	
 	public void retirar(double x) throws Exception 
@@ -59,10 +59,10 @@ public class Credito extends Tarjeta{
 		return mCredito-getSaldo();
 	}
 	
-	public void liquidar(int mes, int anio) 	{
-
+	public void liquidar(int mes, int anio) 
+	{
 		Movimiento liq=new Movimiento();
-		liq.setConcepto("Liquidacion de operaciones tarj. cr�dito, " + (mes+1) + " de " + (anio+1900));
+		liq.setConcepto("Liquidaci�n de operaciones tarj. cr�dito, " + (mes+1) + " de " + (anio+1900));
 		double r=0.0;
 		for (int i=0; i<this.mMovimientos.size(); i++) 
 		{

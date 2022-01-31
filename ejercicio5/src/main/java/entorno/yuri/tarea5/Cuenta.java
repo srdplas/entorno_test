@@ -1,4 +1,4 @@
-package entorno.yuri.boletinjunit.ejercicicio5;
+package entorno.yuri.tarea5;
 
 import java.util.Vector;
 
