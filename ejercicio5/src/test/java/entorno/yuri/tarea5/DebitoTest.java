@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+@DisplayName("Test a la clase Debito")
 class DebitoTest extends CoreMatchers{
 
 	
