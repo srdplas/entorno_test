@@ -18,7 +18,7 @@ public class Credito extends Tarjeta
 	public void retirar(double x) throws Exception 
 	{
 		Movimiento m=new Movimiento();
-		m.setConcepto("Retirada en cajero autom�tico");
+		m.setConcepto("Retirada en cajero automatico");
 		x=(x*0.05<3.0 ? 3 : x*0.05);  // A�adimos una comisi�n de un 5%, m�nimo de 3 euros.
 		m.setImporte(x);
 		mMovimientos.addElement(m);
@@ -29,7 +29,7 @@ public class Credito extends Tarjeta
 	public void ingresar(double x) throws Exception 
 	{
 		Movimiento m=new Movimiento();
-		m.setConcepto("Ingreso en cuenta asociada (cajero autom�tico)");
+		m.setConcepto("Ingreso en cuenta asociada (cajero automatico)");
 		m.setImporte(x);
 		mMovimientos.addElement(m);
 		mCuentaAsociada.ingresar(x);

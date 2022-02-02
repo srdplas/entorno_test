@@ -12,6 +12,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+@SuppressWarnings("unused")
 @DisplayName("Test a la clase Movimiento")
 class MovimientoTest extends CoreMatchers{
 
@@ -57,6 +58,7 @@ class MovimientoTest extends CoreMatchers{
 		assertThat("Error el metodo para obtener el concepto", m.getConcepto(), is("Compra Navideña"));
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	@DisplayName("Test al metodo para obtener la fecha")
 	void testGetFecha() {
