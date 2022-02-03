@@ -4,6 +4,7 @@ import org.junit.platform.suite.api.*;
 import static org.hamcrest.MatcherAssert.*;
 
 import org.hamcrest.CoreMatchers;
+@SuppressWarnings("unused")
 @Suite
 @SelectClasses( { BoaTest.class, FridgeTest.class, OperadorAritmeticoTest.class, PilaTest.class, SubscripcionTest.class, AccountTest.class } )
 @DisplayName("Suite que ejecuta todos los test")
